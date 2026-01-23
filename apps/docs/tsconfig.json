@@ -23,7 +23,10 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipDefaultLibCheck": true,
-    "skipLibCheck":true
+    "skipLibCheck": true,
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "lib": ["dom", "es2022"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

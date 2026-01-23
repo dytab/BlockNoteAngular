@@ -19,10 +19,10 @@
   },
   "devDependencies": {},
   "peerDependencies": {
-    "@angular/core": "~20.1.0",
-    "@angular/common": "~20.1.0",
-    "@angular/forms": "~20.1.0",
-    "@angular/cdk": "~20.1.0"
+    "@angular/core": "21.1.1",
+    "@angular/common": "21.1.1",
+    "@angular/forms": "21.1.1",
+    "@angular/cdk": "21.1.1"
   },
   "peerDependenciesMeta": {
     "@angular/platform-browser": {
