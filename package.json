@@ -128,17 +128,5 @@
   },
   "nx": {
     "includedScripts": []
-  },
-  "overrides": {
-    "@analogjs/vitest-angular": {
-      "@angular-devkit/architect": "$@angular-devkit/architect"
-    },
-    "@angular-devkit/build-angular": {
-      "jest": "$jest",
-      "jest-environment-jsdom": "$jest-environment-jsdom"
-    },
-    "babel-plugin-istanbul": {
-      "test-exclude": "^7.0.1"
-    }
   }
 }
