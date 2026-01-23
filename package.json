@@ -5,8 +5,8 @@
   "scripts": {},
   "private": true,
   "engines": {
-    "node": "22",
-    "npm": "10"
+    "node": "24",
+    "npm": "11"
   },
   "dependencies": {
     "@analogjs/content": "^1.19.4",
@@ -32,7 +32,7 @@
     "@nestjs/platform-express": "^10.0.2",
     "@ng-icons/core": "^29.10.0",
     "@ng-icons/lucide": ">=29.0.0",
-    "@spartan-ng/brain": "^0.0.1-alpha.508",
+    "@spartan-ng/brain": "0.0.1-alpha.536",
     "@spartan-ng/ui-core": "^0.0.1-alpha.380",
     "@testing-library/user-event": "^14.6.1",
     "axios": "^1.6.0",
@@ -84,13 +84,13 @@
     "@nx/webpack": "21.4.1",
     "@nx/workspace": "21.4.1",
     "@schematics/angular": "~20.1.0",
-    "@spartan-ng/cli": "^0.0.1-alpha.508",
+    "@spartan-ng/cli": "0.0.1-alpha.536",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
     "@testing-library/angular": "^17.1.0",
     "@types/jest": "^30.0.0",
-    "@types/node": "18.16.9",
+    "@types/node": "^24.10.1",
     "@types/uuid": "^10.0.0",
     "@typescript-eslint/utils": "^8.33.1",
     "@vitest/coverage-v8": "^3.0.5",
