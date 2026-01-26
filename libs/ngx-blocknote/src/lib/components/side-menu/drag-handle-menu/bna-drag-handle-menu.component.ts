@@ -3,8 +3,8 @@ import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideGripVertical } from '@ng-icons/lucide';
 import { HlmButton } from '@spartan-ng/helm/button';
 import { HlmIcon } from '@spartan-ng/helm/icon';
-
-import { HlmDropdownMenuImports } from '@spartan-ng/helm/dropdown-menu';
+import { BrnMenuTrigger } from '@spartan-ng/brain/menu';
+import { HlmMenu, HlmMenuGroup } from '@spartan-ng/helm/menu';
 import { NgxBlocknoteService } from '../../../services/ngx-blocknote.service';
 import { BnaBlockColorStyleComponent } from './default-items/block-color-style/bna-block-color-style.component';
 import { BnaDeleteBlockItemComponent } from './default-items/delete-block-item/bna-delete-block-item.component';
@@ -13,7 +13,9 @@ import { BnaDeleteBlockItemComponent } from './default-items/delete-block-item/b
   selector: 'bna-drag-handle-menu-btn',
   imports: [
     HlmButton,
-    HlmDropdownMenuImports,
+    BrnMenuTrigger,
+    HlmMenu,
+    HlmMenuGroup,
     BnaDeleteBlockItemComponent,
     BnaBlockColorStyleComponent,
     NgIcon,

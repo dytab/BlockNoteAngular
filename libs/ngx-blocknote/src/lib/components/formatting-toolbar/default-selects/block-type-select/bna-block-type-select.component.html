@@ -4,7 +4,7 @@
   size="xs"
   variant="ghost"
   class="h-[30px] min-w-[100px]"
-  [hlmDropdownMenuTrigger]="menu"
+  [brnMenuTriggerFor]="menu"
 >
   @if (currentBlockType()?.icon) {
     <ng-icon
@@ -19,8 +19,8 @@
   </span>
 </button>
 <ng-template #menu>
-  <hlm-dropdown-menu>
-    <hlm-dropdown-menu-group class="px-2">
+  <hlm-menu>
+    <hlm-menu-group class="px-2">
       <div class="flex flex-col w-full">
         @for (
           blockType of filteredBlockTypes();
@@ -29,12 +29,12 @@
         ) {
           <button
             type="button"
-            hlmDropdownMenuCheckbox
+            hlmMenuItemCheckbox
             class="gap-2 flex justify-start"
             (click)="changeBlockType(blockType.type, blockType.props)"
             [checked]="currentBlockTypeIndex() === index"
           >
-            <hlm-dropdown-menu-checkbox-indicator />
+            <hlm-menu-item-check />
             <div
               class="min-w-[120px] gap-2 flex justify-start items-center w-full"
             >
@@ -46,6 +46,6 @@
           </button>
         }
       </div>
-    </hlm-dropdown-menu-group>
-  </hlm-dropdown-menu>
+    </hlm-menu-group>
+  </hlm-menu>
 </ng-template>

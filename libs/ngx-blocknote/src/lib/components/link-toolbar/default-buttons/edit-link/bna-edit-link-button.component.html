@@ -3,15 +3,15 @@
   hlmBtn
   variant="ghost"
   size="sm"
-  [hlmDropdownMenuTrigger]="menu"
+  [brnMenuTriggerFor]="menu"
 >
   Edit link
 </button>
 
 <ng-template #menu>
-  <hlm-dropdown-menu>
-    <hlm-dropdown-menu-group class="px-2">
+  <hlm-menu>
+    <hlm-menu-group class="px-2">
       <bna-link-form [initialValue]="initialValue" />
-    </hlm-dropdown-menu-group>
-  </hlm-dropdown-menu>
+    </hlm-menu-group>
+  </hlm-menu>
 </ng-template>

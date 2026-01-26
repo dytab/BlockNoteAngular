@@ -22,8 +22,13 @@ import {
 } from '@ng-icons/lucide';
 import { HlmButton } from '@spartan-ng/helm/button';
 import { HlmIcon } from '@spartan-ng/helm/icon';
-
-import { HlmDropdownMenuImports } from '@spartan-ng/helm/dropdown-menu';
+import { BrnMenuTrigger } from '@spartan-ng/brain/menu';
+import {
+  HlmMenu,
+  HlmMenuGroup,
+  HlmMenuItemCheckbox,
+  HlmMenuItemCheck,
+} from '@spartan-ng/helm/menu';
 import { BlockTypeSelectItem } from '../../../../interfaces/block-type-select-item';
 import { NgxBlocknoteService } from '../../../../services';
 import { useEditorContentOrSelectionChange } from '../../../../util/use-editor-content-or-selection-change';
@@ -31,7 +36,16 @@ import { defaultBlockTypeSelectItems } from './default-block-type-select-items';
 
 @Component({
   selector: 'bna-block-type-selection-button',
-  imports: [HlmButton, HlmDropdownMenuImports, NgIcon, HlmIcon],
+  imports: [
+    HlmButton,
+    HlmMenu,
+    HlmMenuGroup,
+    BrnMenuTrigger,
+    HlmMenuItemCheck,
+    HlmMenuItemCheckbox,
+    NgIcon,
+    HlmIcon,
+  ],
   templateUrl: './bna-block-type-select.component.html',
   providers: [
     provideIcons({

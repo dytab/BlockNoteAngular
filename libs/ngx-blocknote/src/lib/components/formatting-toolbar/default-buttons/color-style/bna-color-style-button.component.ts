@@ -7,10 +7,10 @@ import {
   DefaultStyleSchema,
   InlineContentSchema,
 } from '@blocknote/core';
-
+import { BrnMenuTrigger } from '@spartan-ng/brain/menu';
 import { BrnTooltipContentTemplate } from '@spartan-ng/brain/tooltip';
 import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmDropdownMenuImports } from '@spartan-ng/helm/dropdown-menu';
+import { HlmMenu, HlmMenuGroup } from '@spartan-ng/helm/menu';
 import { HlmTooltip, HlmTooltipTrigger } from '@spartan-ng/helm/tooltip';
 import { ColorOptions } from '../../../../interfaces/color-options.type';
 import { NgxBlocknoteService } from '../../../../services';
@@ -48,7 +48,9 @@ const checkColorInSchema = <Color extends 'text' | 'background'>(
   selector: 'bna-color-style-button',
   imports: [
     HlmButton,
-    HlmDropdownMenuImports,
+    BrnMenuTrigger,
+    HlmMenu,
+    HlmMenuGroup,
     BnaColorIconComponent,
     BnaColorPickerComponent,
     HlmTooltip,

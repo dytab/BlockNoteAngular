@@ -1,21 +1,3 @@
-## 1.12.1 (2025-12-10)
-
-This was a version bump only, there were no code changes.
-
-## 1.12.0 (2025-12-10)
-
-### 🚀 Features
-
-- bump @blocknote/core to 0.37.0 ([e100d84](https://github.com/dytab/ngx-blocknote/commit/e100d84))
-
-### 🩹 Fixes
-
-- update bootstrap function to accept context parameter ([6bd1be5](https://github.com/dytab/ngx-blocknote/commit/6bd1be5))
-
-### ❤️ Thank You
-
-- Johannes Klein
-
 ## 1.11.1 (2025-08-15)
 
 ### 🚀 Features

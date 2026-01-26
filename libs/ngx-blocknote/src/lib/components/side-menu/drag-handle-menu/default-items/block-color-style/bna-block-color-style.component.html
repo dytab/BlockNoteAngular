@@ -4,15 +4,15 @@
   size="sm"
   variant="ghost"
   class="w-full justify-start"
-  [hlmDropdownMenuTrigger]="menu"
+  [brnMenuTriggerFor]="menu"
 >
   Color
 </button>
 
 <ng-template #menu>
-  <hlm-dropdown-menu>
-    <hlm-dropdown-menu-group class="px-2 max-h-[350px] overflow-auto">
+  <hlm-menu>
+    <hlm-menu-group class="px-2 max-h-[350px] overflow-auto">
       <bna-color-picker [options]="options()" />
-    </hlm-dropdown-menu-group>
-  </hlm-dropdown-menu>
+    </hlm-menu-group>
+  </hlm-menu>
 </ng-template>
