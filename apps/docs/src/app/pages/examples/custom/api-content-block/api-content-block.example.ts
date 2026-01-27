@@ -7,7 +7,7 @@ import {
   defaultBlockSpecs,
   defaultInlineContentSpecs,
   defaultStyleSpecs,
-  PartialBlock,
+  PartialBlock
 } from '@blocknote/core';
 import {
   BlockNoteEditorOptionsType,
@@ -16,22 +16,12 @@ import {
   BnaEditorComponent,
   BnaSideMenuComponent,
   BnaSideMenuControllerComponent,
-  NgxBlocknoteService,
+  NgxBlocknoteService
 } from '@dytab/ngx-blocknote';
 import { HlmButton } from '@spartan-ng/helm/button';
 import { HlmCheckbox } from '@spartan-ng/helm/checkbox';
-import {
-  BrnDialogContent,
-  BrnDialogDescription,
-  BrnDialogTitle,
-  BrnDialogTrigger,
-} from '@spartan-ng/brain/dialog';
-import {
-  HlmDialog,
-  HlmDialogContent,
-  HlmDialogFooter,
-  HlmDialogHeader,
-} from '@spartan-ng/helm/dialog';
+import { BrnDialogContent, BrnDialogDescription, BrnDialogTitle } from '@spartan-ng/brain/dialog';
+import { HlmDialog, HlmDialogContent, HlmDialogFooter, HlmDialogHeader } from '@spartan-ng/helm/dialog';
 import { HlmInput } from '@spartan-ng/helm/input';
 import { apiContentBlock } from './api-content-block';
 
@@ -59,7 +49,6 @@ const schema = BlockNoteSchema.create({
     HlmDialogHeader,
     BrnDialogTitle,
     BrnDialogDescription,
-    BrnDialogTrigger,
     HlmDialogFooter,
     HlmCheckbox,
     ReactiveFormsModule,
@@ -79,7 +68,7 @@ const schema = BlockNoteSchema.create({
             <hlm-dialog>
               <button
                 hlmBtn
-                brnDialogTrigger
+                hlmDialogTrigger
                 variant="ghost"
                 size="sm"
                 class="justify-start w-full"
