@@ -23,7 +23,7 @@ jobs:
       - name: install npm
         run: npm ci
 
-      - uses: nrwl/nx-set-shas@v4
+      - uses: nrwl/nx-set-shas@v5
 
       - name: lint & test
         run: npx nx run-many -t lint,test
@@ -62,4 +62,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
