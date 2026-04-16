@@ -34,7 +34,7 @@
     "@ng-icons/lucide": ">=32.0.0 <34.0.0",
     "@spartan-ng/brain": "^0.0.1-alpha.609",
     "@testing-library/user-event": "^14.6.1",
-    "axios": "^1.6.0",
+    "axios": "^1.15.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "fast-glob": "^3.3.3",
