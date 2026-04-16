@@ -1,5 +1,6 @@
 {
   "name": "@dytab/ngx-blocknote",
+  "deprecated": "This package is no longer maintained.",
   "homepage": "https://dytab.github.io/ngx-blocknote",
   "version": "1.11.0",
   "publishConfig": {
